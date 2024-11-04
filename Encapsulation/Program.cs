@@ -32,24 +32,11 @@ public class Araba
         KapıSayisi = kapıSayisi; 
     }
 
-    // Araba bilgilerini yazdırma metodu
+   
     public void BilgileriYazdir()
     {
         Console.WriteLine($"Marka: {Marka}, Model: {Model}, Renk: {Renk}, Kapı Sayısı: {KapıSayisi}");
     }
 }
 
-// Program sınıfı ile giriş noktası
-class Program
-{
-    static void Main()
-    {
-        // Kapı Sayısı 4 olan geçerli bir Araba nesnesi
-        Araba araba1 = new Araba("Toyota", "Corolla", "Beyaz", 4);
-        araba1.BilgileriYazdir();
 
-        // Kapı Sayısı 3 olan geçersiz bir Araba nesnesi
-        Araba araba2 = new Araba("Honda", "Civic", "Siyah", 3);
-        araba2.BilgileriYazdir();
-    }
-}
